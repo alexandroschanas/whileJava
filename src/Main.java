@@ -1,15 +1,32 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+
+
+import java.util.Scanner;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        int currentYear = 2026;
+        System.out.println(getInputFromConsole(currentYear));
+
     }
-}
+        public static String getInputFromConsole(int currentYear){
+
+        String name = System.console().readLine("Hi, What's your Name?");
+        System.out.println("Hi " + name + ", Thanks for taking the course!");
+
+        String born = System.console().readLine("När du har född?");
+        int age = currentYear - Integer.parseInt((born));
+        System.out.println("You are " + age + " years old");
+
+        return "";
+        }
+
+        public static String getInputFromScanner(int currentYear){
+
+        Scanner
+
+        }
+
+    }
+
+
